@@ -1,0 +1,21 @@
+{
+    "name": "farsidesign/yii2-jalali-datepicker",
+    "description": "This extension is Jalali Bootstrap DatePicker",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","jalali","persian","jdf","yii2 jalali","yii2 datepicher"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moslem Mobarakeh",
+            "email": "info@farsidesign.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "farsidesign\\jalalidatepicker\\": ""
+        }
+    }
+}
