@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist farsidesign/yii2-jalali-datepicker "*"
+php composer.phar require --prefer-dist farsidesign/yii2-jalali-datepicker "dev-master"
 ```
 
 or add
 
 ```
-"farsidesign/yii2-jalali-datepicker": "*"
+"farsidesign/yii2-jalali-datepicker": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,4 +28,10 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \farsidesign\jalalidatepicker\AutoloadExample::widget(); ?>```
+<?= $form->field($model, 'time')->widget(\farsidesign\jalalidatepicker\Datepicker::classname(), [
+    //'theme' => 'blue',
+    'clientOptions' => [
+            'format' => 'YYYY/MM/DD',
+            'class' => 'form-control',
+        ]
+]) ?>```
