@@ -18,7 +18,7 @@
         "psr-4": {
             "farsidesign\\jalalidatepicker\\": ""
         }
-    }
+    },
     "extra": {
         "asset-installer-paths": {
           "bower-asset-library": "vendor/bower"
