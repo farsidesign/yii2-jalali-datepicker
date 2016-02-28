@@ -12,7 +12,7 @@ namespace farsidesign\jalalidatepicker;
 
 use Yii;
 use yii\base\InvalidParamException;
-//use yii\helpers\FormatConverter;
+use yii\base\Model;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
@@ -88,7 +88,7 @@ class DatePicker extends InputWidget
         $this->clientOptions['altField'] = '#' . $this->options['id'];
         $options = $this->clientOptions;
         
-        $options['value'] = $value;
+        //$options['value'] = $value;
         
 
         if ($this->inline === false) {
@@ -96,7 +96,7 @@ class DatePicker extends InputWidget
             if ($this->hasModel()) {
                 $contents[] = Html::activeTextInput($this->model, $this->attribute, $options);
             } else {
-                $contents[] = Html::textInput($this->name, $value, $options);
+                //$contents[] = Html::textInput($this->name, $value, $options);
             }
         } else {
             // render an inline date picker with hidden input
