@@ -60,7 +60,7 @@ class DatePicker extends InputWidget
         } else {
             $this->{'Datepicker' . ucfirst($this->theme) . 'ThemeAsset'}($view);
         }
-        DatePickerAsset::register($view);
+        DatepickerAsset::register($view);
     }
 
     /**
