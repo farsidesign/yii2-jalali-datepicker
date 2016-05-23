@@ -28,7 +28,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= $form->field($model, 'time')->widget(\farsidesign\jalalidatepicker\Datepicker::classname(), [
+<?= $form->field($model, 'time')->widget(\farsidesign\jalalidatepicker\DatePicker::classname(), [
     //'theme' => 'blue',
     'clientOptions' => [
             'format' => 'YYYY/MM/DD',
